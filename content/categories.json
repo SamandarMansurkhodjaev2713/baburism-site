@@ -1,0 +1,34 @@
+[
+  {
+    "id": "prints",
+    "title": { "ru": "Принты", "uz": "Printlar", "en": "Art prints" },
+    "description": { "ru": "Образ на бумаге", "uz": "Qogʻozdagi obraz", "en": "An image on paper" },
+    "image": "art/duality.jpg"
+  },
+  {
+    "id": "ceramics",
+    "title": { "ru": "Керамика и посуда", "uz": "Keramika va idishlar", "en": "Ceramics & tableware" },
+    "description": {
+      "ru": "Форма повседневного",
+      "uz": "Kundalik hayot shakli",
+      "en": "The shape of everyday life"
+    },
+    "image": "art/pomegranate-feast.jpg"
+  },
+  {
+    "id": "clothing",
+    "title": { "ru": "Одежда", "uz": "Kiyim", "en": "Clothing" },
+    "description": { "ru": "Искусство в движении", "uz": "Harakatdagi sanʼat", "en": "Art in motion" },
+    "image": "art/fruit.jpg"
+  },
+  {
+    "id": "accessories",
+    "title": { "ru": "Аксессуары и декор", "uz": "Aksessuarlar va dekor", "en": "Accessories & objects" },
+    "description": {
+      "ru": "Детали личного пространства",
+      "uz": "Shaxsiy makon detallari",
+      "en": "Details of a personal space"
+    },
+    "image": "art/black-river.jpg"
+  }
+]

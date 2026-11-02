@@ -1,0 +1,467 @@
+/* The quatrefoil is redrawn from Baburism's supplied content strategy, page 7. */
+.hero-ornament {
+  display: none;
+}
+.hero-runway {
+  position: relative;
+}
+.hero-runway::after {
+  content: "";
+  display: block;
+  height: min(24svh, 220px);
+}
+.hero-runway > .art-hero {
+  position: sticky;
+  top: 0;
+}
+.opening-sequence > .intro-section {
+  margin-top: calc(-1 * min(24svh, 220px));
+  z-index: 2;
+  border-radius: 28px 28px 0 0;
+  border-top: 1px solid #c9b99e;
+  box-shadow: 0 -20px 40px -30px #35271966;
+}
+.opening-sequence > .collection-section {
+  position: relative;
+  z-index: 2;
+}
+.opening-sequence {
+  position: relative;
+  isolation: isolate;
+}
+.baburism .intro-copy .lead {
+  font-size: clamp(24px, 2.1vw, 31px);
+  line-height: 1.55;
+  letter-spacing: -0.02em;
+}
+.baburism .intro-copy > p:not(.lead),
+.baburism .visit-copy > p {
+  font-size: 21px;
+  line-height: 1.7;
+}
+.category-art-note {
+  font-size: 16px;
+  line-height: 1.6;
+}
+.shop-catalogue .shop-heading {
+  position: relative;
+  padding-bottom: 38px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 40px;
+}
+.shop-catalogue .shop-heading > div {
+  max-width: 750px;
+}
+.shop-catalogue .shop-heading h1 {
+  font-size: clamp(56px, 6.5vw, 96px);
+}
+.shop-catalogue .shop-heading p {
+  font-size: 23px;
+  line-height: 1.55;
+  max-width: 38ch;
+}
+.catalog-directions-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 26px;
+}
+.catalog-directions-heading h2 {
+  font-size: 32px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+}
+.catalog-directions {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 25px;
+  margin-bottom: 70px;
+}
+.catalog-direction {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  width: 100%;
+  padding: 0;
+  text-align: left;
+  color: var(--ink);
+}
+.catalog-direction-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1.28;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 22px;
+  background: #e5dccd;
+  overflow: hidden;
+  border: 1px solid transparent;
+  transition:
+    background 0.25s,
+    border-color 0.25s;
+}
+.catalog-direction:nth-child(2) .catalog-direction-image {
+  background: #dcd5c6;
+}
+.catalog-direction:nth-child(3) .catalog-direction-image {
+  background: #d8c7ad;
+}
+.catalog-direction:nth-child(4) .catalog-direction-image {
+  background: #d8d5c9;
+}
+.catalog-direction-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.catalog-direction-arrow {
+  position: absolute;
+  bottom: 9px;
+  right: 9px;
+  background: var(--paper);
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+.catalog-direction-arrow svg {
+  width: 22px;
+  rotate: -45deg;
+}
+.catalog-direction:hover .catalog-direction-arrow,
+.catalog-direction.is-selected .catalog-direction-arrow {
+  background: var(--ink);
+  color: var(--paper);
+}
+.catalog-direction:hover .catalog-direction-image > img {
+  transform: translateY(-3px);
+}
+.catalog-direction.is-selected .catalog-direction-image {
+  border-color: var(--ink);
+}
+.catalog-direction-title {
+  display: block;
+  font-size: 24px;
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+  margin-top: 18px;
+}
+.catalog-direction.is-selected .catalog-direction-title {
+  text-decoration: underline;
+  text-underline-offset: 7px;
+  text-decoration-thickness: 1px;
+}
+.catalog-direction-description {
+  display: block;
+  font-size: 17px;
+  line-height: 1.5;
+  margin-top: 9px;
+  color: #675b4f;
+}
+.catalog-direction-count {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+.catalog-result-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  padding-top: 30px;
+  border-top: 1px solid var(--line);
+  margin-bottom: 26px;
+  scroll-margin-top: 100px;
+}
+.catalog-result-heading h2 {
+  font-size: clamp(28px, 3vw, 42px);
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+}
+.shop-catalogue .shop-tools {
+  padding: 22px 24px;
+  background: #eae3d8;
+  gap: 24px;
+}
+.shop-catalogue .shop-tools label {
+  font-size: 16px;
+}
+.shop-catalogue .shop-tools input,
+.shop-catalogue .shop-tools select {
+  font-size: 18px;
+}
+.shop-catalogue .shop-empty {
+  max-width: 900px;
+  padding-top: 15px;
+}
+.shop-catalogue .shop-empty p {
+  font-size: 21px;
+}
+.shop-catalogue .shop-results {
+  font-size: 16px;
+}
+.catalog-grid-arrival {
+  animation: catalog-settle 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+@keyframes catalog-settle {
+  from {
+    opacity: 0.85;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.shop-card-info h2 {
+  font-size: 25px;
+}
+.shop-source {
+  font-size: 16px;
+}
+.shop-price {
+  font-size: 20px;
+}
+.curated-item p {
+  font-size: 22px;
+}
+.curated-item > span {
+  font-size: 17px;
+}
+.curated-hint {
+  font-size: 16px;
+}
+.baburism .about-opening-copy > p,
+.baburism .artist-section p {
+  font-size: 20px;
+  line-height: 1.7;
+}
+.baburism .contact-form label {
+  font-size: 17px;
+}
+.baburism .explorer-figure figcaption {
+  font-size: 15px;
+}
+.baburism .explorer-hint {
+  font-size: 14px;
+}
+@media (min-width: 701px) {
+  .art-hero-desktop-text p:last-child {
+    font-size: 22px;
+    line-height: 1.6;
+  }
+  .hero-ornament {
+    display: block;
+    position: absolute;
+    inset: -40px;
+    z-index: 0;
+    background: url("../assets/ornament.svg") -38px -32px/270px 270px;
+    opacity: 0.32;
+    pointer-events: none;
+    mask-image: linear-gradient(180deg, #000 0%, #000 21%, transparent 36%, transparent 69%, #000 91%);
+  }
+  .art-hero-body,
+  .art-hero-meta {
+    position: relative;
+    z-index: 1;
+  }
+  .art-hero-scene {
+    z-index: 1;
+  }
+  .hero-runway::after {
+    height: min(30svh, 260px);
+  }
+  .opening-sequence > .intro-section {
+    margin-top: calc(-1 * min(30svh, 260px));
+  }
+  .baburism .journal-card:not(.journal-0) .journal-card-description {
+    font-size: 19px;
+  }
+  .baburism .journal-meta {
+    font-size: 15px;
+  }
+  .baburism .journal-card small {
+    font-size: 14px;
+  }
+}
+@media (min-width: 701px) and (max-width: 1000px) {
+  .catalog-directions {
+    gap: 18px;
+  }
+  .catalog-direction-title {
+    font-size: 21px;
+  }
+  .catalog-direction-image {
+    padding: 15px 15px 40px;
+    aspect-ratio: 0.92;
+  }
+  .catalog-direction-description {
+    font-size: 16px;
+  }
+}
+@media (max-width: 700px) {
+  .hero-runway::after {
+    height: 120px;
+  }
+  .opening-sequence > .intro-section {
+    margin-top: -120px;
+    border-radius: 22px 22px 0 0;
+  }
+  .baburism .intro-copy .lead {
+    font-size: 24px;
+    line-height: 1.55;
+  }
+  .baburism .intro-copy > p:not(.lead),
+  .baburism .visit-copy > p {
+    font-size: 19px;
+  }
+  .category-art-note {
+    font-size: 15px;
+  }
+  .shop-catalogue .shop-heading {
+    padding-bottom: 26px;
+    margin-bottom: 28px;
+  }
+  .shop-catalogue .shop-heading h1 {
+    font-size: 48px;
+  }
+  .shop-catalogue .shop-heading p {
+    font-size: 20px;
+    line-height: 1.55;
+    margin-top: 20px;
+  }
+  .catalog-directions-heading {
+    gap: 15px;
+    margin-bottom: 22px;
+    align-items: start;
+  }
+  .catalog-directions-heading h2 {
+    font-size: 27px;
+    max-width: 8em;
+  }
+  .catalog-directions-heading .shop-text-button {
+    font-size: 15px;
+    white-space: nowrap;
+    padding-top: 0;
+  }
+  .catalog-directions {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 16px;
+    margin-bottom: 38px;
+  }
+  .catalog-direction-image {
+    aspect-ratio: 1.05;
+    padding: 14px 14px 38px;
+  }
+  .catalog-direction-title {
+    font-size: 21px;
+    margin-top: 14px;
+  }
+  .catalog-direction-description {
+    font-size: 16px;
+    margin-top: 8px;
+  }
+  .catalog-direction-arrow {
+    width: 34px;
+    height: 34px;
+    bottom: 5px;
+    right: 5px;
+  }
+  .catalog-direction-count {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  .catalog-result-heading {
+    margin-bottom: 22px;
+    padding-top: 24px;
+    gap: 18px;
+  }
+  .catalog-result-heading h2 {
+    font-size: 29px;
+  }
+  .shop-catalogue .shop-tools {
+    padding: 18px;
+    gap: 14px;
+  }
+  .shop-catalogue .shop-tools input,
+  .shop-catalogue .shop-tools select {
+    font-size: 17px;
+  }
+  .shop-catalogue .shop-empty p {
+    font-size: 19px;
+  }
+  .shop-card-info h2 {
+    font-size: 19px;
+  }
+  .shop-price {
+    font-size: 17px;
+  }
+  .shop-source {
+    font-size: 15px;
+  }
+  .curated-item p {
+    font-size: 21px;
+  }
+  .curated-item > span,
+  .curated-hint {
+    font-size: 16px;
+  }
+  .baburism .journal-card small,
+  .baburism .journal-meta {
+    font-size: 14px;
+  }
+  .baburism .journal-0 .journal-card-description {
+    font-size: 20px;
+  }
+  .baburism .about-opening-copy > p,
+  .baburism .artist-section p {
+    font-size: 19px;
+  }
+  .baburism .explorer-figure figcaption,
+  .baburism .explorer-hint {
+    font-size: 14px;
+  }
+}
+@media (max-width: 360px) {
+  .catalog-direction-title {
+    font-size: 19px;
+  }
+  .catalog-directions-heading h2 {
+    font-size: 25px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-runway::after {
+    height: 0;
+  }
+  .hero-runway > .art-hero {
+    position: relative;
+  }
+  .opening-sequence > .intro-section {
+    margin-top: -20px;
+  }
+  .catalog-grid-arrival {
+    animation: none;
+  }
+  .home-category-image,
+  .catalog-direction-image,
+  .catalog-direction-image > img,
+  .category-open svg {
+    transition: none;
+  }
+  .curated-group[aria-hidden="true"] {
+    display: none;
+  }
+  .curated-group:not([aria-hidden]) .curated-item[aria-hidden="true"] {
+    display: none;
+  }
+}
+
+.curated-viewport:focus-visible {
+  outline: 2px solid var(--rust);
+  outline-offset: -3px;
+}

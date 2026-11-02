@@ -1,0 +1,279 @@
+/* Four equal directions: the artwork supplies the character, the type supplies the route. */
+.collection-section .section-heading {
+  align-items: center;
+}
+.home-categories {
+  gap: 44px 32px;
+}
+.home-category {
+  display: block;
+  padding: 0 0 22px;
+  border-bottom: 1px solid var(--line);
+}
+.home-category-image {
+  padding: 0;
+  border: 0;
+  aspect-ratio: 1.6;
+  background: var(--paper);
+}
+.home-category-image::before {
+  content: none;
+}
+.home-category-image > img {
+  object-fit: cover;
+  object-position: 50% 43%;
+  transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.home-category:hover .home-category-image > img {
+  transform: scale(1.025);
+}
+.category-1 .home-category-image > img {
+  object-position: 61% 50%;
+}
+.category-2 .home-category-image > img {
+  object-position: 50% 55%;
+}
+.home-category-copy {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 32px;
+  align-items: start;
+  gap: 10px 18px;
+  padding-top: 22px;
+}
+.baburism .home-category-copy h3 {
+  font-size: clamp(28px, 2.5vw, 38px);
+  line-height: 1.18;
+  letter-spacing: -0.025em;
+}
+.home-category-copy p {
+  grid-column: 1/-1;
+  text-align: left;
+  max-width: none;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+.category-link-arrow {
+  display: flex;
+  justify-content: end;
+  padding-top: 6px;
+}
+.category-link-arrow svg {
+  width: 26px;
+  height: 26px;
+  transition: transform 0.2s;
+}
+.home-category:hover .category-link-arrow svg {
+  transform: translateX(4px);
+}
+.category-art-note {
+  padding: 0;
+  margin-top: -14px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+.catalog-direction-image {
+  padding: 0;
+  aspect-ratio: 1.05;
+  border: 0;
+  background: var(--paper);
+}
+.catalog-direction-image > img {
+  object-fit: cover;
+  object-position: 50% 43%;
+}
+.catalog-direction:nth-child(2) .catalog-direction-image > img {
+  object-position: 61% 50%;
+}
+.catalog-direction-arrow {
+  display: none;
+}
+.catalog-direction-title {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 10px;
+}
+.catalog-direction-title > span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.catalog-direction-title svg {
+  flex: 0 0 24px;
+  width: 24px;
+  height: 24px;
+  margin-top: 2px;
+  transition: transform 0.2s;
+}
+.catalog-direction:hover .catalog-direction-image > img {
+  transform: scale(1.025);
+}
+.catalog-direction:hover .catalog-direction-title svg {
+  transform: translateX(3px);
+}
+.catalog-direction {
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 20px;
+}
+.catalog-direction.is-selected {
+  border-bottom-color: var(--ink);
+}
+.catalog-direction.is-selected .catalog-direction-image {
+  border: 0;
+}
+.catalog-direction-description {
+  font-size: 17px;
+}
+
+/* Transform motion does not write scrollLeft every frame or depend on its rounded pixels. */
+.curated-viewport {
+  overflow: hidden;
+  touch-action: pan-y pinch-zoom;
+}
+.curated-viewport:not([data-ribbon-state]) {
+  overflow-x: auto;
+}
+.curated-track {
+  transform: translate3d(0, 0, 0);
+}
+.curated-viewport[data-ribbon-state="running"] .curated-track {
+  will-change: transform;
+}
+.curated-viewport[data-ribbon-state="interaction"] {
+  cursor: grabbing;
+}
+.curated-item:focus-visible {
+  outline-offset: -3px;
+}
+
+@media (max-width: 700px) {
+  .collection-section .section-heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 28px;
+  }
+  .collection-section .section-heading h2 {
+    font-size: 36px;
+    line-height: 1.1;
+  }
+  .collection-section .section-heading .action-link {
+    border: 0;
+    margin: 0;
+    padding: 8px 0;
+    gap: 8px;
+    font-size: 15px;
+    white-space: nowrap;
+    min-height: 44px;
+  }
+  .collection-section .section-heading .action-link svg {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    flex: 0 0 20px;
+  }
+  .home-categories {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 16px;
+  }
+  .home-category {
+    padding-bottom: 17px;
+  }
+  .home-category-image {
+    aspect-ratio: 0.96;
+    padding: 0;
+  }
+  .home-category-copy {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 20px;
+    padding-top: 15px;
+    gap: 9px 6px;
+  }
+  .baburism .home-category-copy h3 {
+    font-size: 23px;
+    line-height: 1.2;
+  }
+  .category-link-arrow {
+    padding-top: 4px;
+  }
+  .category-link-arrow svg {
+    width: 20px;
+    height: 20px;
+  }
+  .home-category-copy p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: none;
+  }
+  .category-art-note {
+    font-size: 14px;
+    margin-top: -6px;
+  }
+  .catalog-direction-image {
+    aspect-ratio: 0.96;
+    padding: 0;
+  }
+  .catalog-direction-title {
+    font-size: 22px;
+    gap: 6px;
+    line-height: 1.22;
+  }
+  .catalog-direction-title svg {
+    width: 20px;
+    height: 20px;
+    flex-basis: 20px;
+  }
+  .catalog-direction-description {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+@media (max-width: 360px) {
+  .collection-section .section-heading h2 {
+    font-size: 31px;
+  }
+  .collection-section .section-heading .action-link {
+    font-size: 14px;
+    gap: 5px;
+  }
+  .baburism .home-category-copy h3,
+  .catalog-direction-title {
+    font-size: 20px;
+  }
+  .home-categories {
+    column-gap: 14px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .home-category-image > img,
+  .catalog-direction-image > img,
+  .category-link-arrow svg,
+  .catalog-direction-title svg {
+    transition: none;
+  }
+  .home-category:hover .home-category-image > img,
+  .catalog-direction:hover .catalog-direction-image > img {
+    transform: none;
+  }
+  .curated-viewport {
+    overflow-x: auto;
+    touch-action: pan-x pan-y pinch-zoom;
+  }
+  .curated-track {
+    transform: none;
+  }
+}
+
+.catalog-directions {
+  margin-bottom: 28px;
+}
+.catalog-art-note {
+  margin: 0 0 38px;
+}

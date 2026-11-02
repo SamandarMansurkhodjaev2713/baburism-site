@@ -1,0 +1,14 @@
+{
+  "salesTelegram": "",
+  "address": "",
+  "hours": { "ru": "", "uz": "", "en": "" },
+  "phone": "",
+  "email": "",
+  "instagram": "",
+  "telegram": "",
+  "mapUrl": "",
+  "latitude": null,
+  "longitude": null,
+  "spacePhotos": [],
+  "curatedArtworks": ["keeping-balance", "duality", "black-river", "pomegranate-feast", "fruit"]
+}

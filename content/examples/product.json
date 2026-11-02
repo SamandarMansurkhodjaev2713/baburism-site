@@ -1,0 +1,32 @@
+{
+  "title": { "ru": "Чашка «Дуальность»", "uz": "«Ikkiyoqlamalik» piyolasi", "en": "Duality cup" },
+  "description": {
+    "ru": "Керамическая чашка с фрагментом картины.",
+    "uz": "Rasmdan parcha tushirilgan sopol piyola.",
+    "en": "A ceramic cup with a detail of the painting."
+  },
+  "body": { "ru": "Первый абзац истории предмета.\n\nВторой абзац.", "uz": "", "en": "" },
+  "image": "products/duality-cup.jpg",
+  "images": ["products/duality-cup-2.jpg"],
+  "category": "ceramics",
+  "collection": "Весна 2027",
+  "price": 180000,
+  "currency": "UZS",
+  "stock": "available",
+  "variants": [
+    {
+      "id": "white",
+      "title": { "ru": "Белая", "uz": "Oq", "en": "White" },
+      "sku": "DU-CUP-W",
+      "stock": "available"
+    }
+  ],
+  "sku": "DU-CUP",
+  "material": { "ru": "Фарфор", "uz": "", "en": "Porcelain" },
+  "size": "300 мл",
+  "edition": "50 экземпляров",
+  "care": { "ru": "Можно мыть в посудомоечной машине.", "uz": "", "en": "" },
+  "sourceArtwork": "duality",
+  "curated": true,
+  "publishedAt": "2027-03-01"
+}

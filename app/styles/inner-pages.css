@@ -1,0 +1,392 @@
+/* Shared reading rhythm, without adding decorative sections or changing product facts. */
+.baburism :is(.inner-hero, .about-opening-copy, .shop-heading) h1 {
+  max-width: 18ch;
+  font-size: clamp(48px, 6.2vw, 92px);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+}
+.baburism .inner-intro {
+  max-width: 56ch;
+  font-size: 22px;
+  line-height: 1.65;
+}
+.baburism :is(.about-opening-copy, .visit-copy) > p {
+  font-size: 21px;
+  line-height: 1.7;
+}
+.baburism .visit-page .visit-top {
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 8%;
+  align-items: start;
+}
+.baburism .visit-page .visit-top h1 {
+  font-size: clamp(50px, 6.2vw, 88px);
+  letter-spacing: -0.035em;
+  line-height: 1.08;
+}
+.baburism :is(.about-idea, .about-collection, .artist-section) p {
+  max-width: 65ch;
+}
+.baburism .back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+  padding-block: 6px;
+  margin-bottom: 26px;
+  font-size: 16px;
+}
+.baburism .back-link svg {
+  width: 22px;
+  height: 22px;
+}
+.baburism .artwork-info {
+  gap: 48px;
+  align-items: start;
+  padding-top: 34px;
+}
+.baburism .artwork-info h1 {
+  font-size: clamp(38px, 4.4vw, 64px);
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+  max-width: 17ch;
+}
+.baburism .artwork-info p {
+  font-size: 19px;
+  line-height: 1.65;
+}
+.baburism .artwork-info .text-link {
+  font-size: 17px;
+}
+.baburism .art-grid figcaption a {
+  font-size: 22px;
+  line-height: 1.35;
+}
+.baburism .work-metadata,
+.baburism .work-year {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.baburism .journal-tabs {
+  gap: 12px 26px;
+  flex-wrap: wrap;
+}
+.baburism .journal-tabs button {
+  min-height: 44px;
+  font-size: 18px;
+  line-height: 1.4;
+  transition:
+    color 0.18s,
+    border-color 0.18s;
+}
+.baburism .article-page {
+  max-width: 1180px;
+}
+.baburism .article-page > h1 {
+  max-width: 20ch;
+  font-size: clamp(44px, 5.7vw, 80px);
+  line-height: 1.1;
+}
+.baburism .article-topic {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--muted);
+  margin: 22px 0;
+}
+.baburism .article-page > .lead {
+  max-width: 48ch;
+  font-size: 25px;
+  line-height: 1.55;
+}
+.baburism .article-body {
+  max-width: 68ch;
+}
+.baburism .article-body p {
+  font-size: 21px;
+  line-height: 1.8;
+}
+.baburism .article-gallery button {
+  overflow: hidden;
+}
+.baburism .privacy-page {
+  max-width: 1040px;
+}
+.baburism .privacy-page p {
+  max-width: 68ch;
+  font-size: 20px;
+  line-height: 1.8;
+}
+.baburism .privacy-page h2 {
+  font-size: 30px;
+  line-height: 1.2;
+  margin: 42px 0 20px;
+}
+.baburism .contact-form :is(input, select, textarea) {
+  font-size: 18px;
+  border-radius: 0;
+  transition:
+    border-color 0.18s,
+    background-color 0.18s;
+}
+.baburism .contact-form :is(input, select, textarea):focus {
+  border-color: var(--ink);
+}
+.baburism .contact-form label {
+  font-size: 17px;
+  line-height: 1.5;
+}
+.baburism .shop-product-info {
+  padding-top: 8px;
+}
+.baburism .shop-product-info h1 {
+  font-size: clamp(36px, 3.8vw, 56px);
+  line-height: 1.12;
+}
+.baburism .shop-product-description {
+  font-size: 20px;
+  line-height: 1.7;
+}
+.baburism .shop-product-price {
+  font-size: 30px;
+}
+.baburism .shop-product-stock,
+.baburism .shop-enquiry-hint {
+  font-size: 16px;
+  line-height: 1.65;
+}
+.baburism .shop-specs {
+  font-size: 17px;
+}
+.baburism .shop-variant {
+  display: block;
+  font-size: 17px;
+}
+.baburism .shop-variant > span {
+  display: block;
+  margin-bottom: 10px;
+}
+.baburism .shop-variant select {
+  width: 100%;
+  min-height: 52px;
+  padding: 12px;
+  font-size: 17px;
+  color: var(--ink);
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 0;
+}
+.baburism .shop-save-product {
+  font-size: 17px;
+  min-height: 52px;
+}
+.baburism .shop-selection-tools {
+  font-size: 17px;
+}
+.baburism .shop-selection-summary {
+  padding: 30px;
+}
+.baburism .shop-selection-summary > p {
+  font-size: 17px;
+}
+.baburism .shop-saved-info h2 {
+  font-size: 26px;
+  line-height: 1.25;
+}
+.baburism .shop-saved-info > p {
+  font-size: 19px;
+}
+.baburism .shop-favorites-page > .shop-empty {
+  max-width: 1100px;
+  border-top: 1px solid var(--line);
+  padding-top: 48px;
+}
+.baburism .shop-favorites-page > .shop-empty h2 {
+  max-width: 16ch;
+  font-size: clamp(38px, 4.3vw, 60px);
+}
+.baburism .shop-favorites-page > .shop-empty p {
+  max-width: 48ch;
+  font-size: 21px;
+}
+.baburism .missing-page p {
+  max-width: 50ch;
+  font-size: 21px;
+  line-height: 1.7;
+}
+.baburism :is(.shop-heart, .shop-save-product) svg {
+  transition:
+    transform 0.18s,
+    color 0.18s;
+}
+.baburism .shop-heart:active svg,
+.baburism .shop-save-product:active svg {
+  transform: scale(0.88);
+}
+.baburism :is(.shop-thumbnails button, .shop-row-select, .shop-picture-action, .shop-text-button) {
+  transition:
+    color 0.18s,
+    border-color 0.18s,
+    background-color 0.18s;
+}
+.baburism .shop-picture-action {
+  font-size: 16px;
+}
+.baburism .shop-thumbnails button {
+  min-height: 64px;
+}
+.baburism :is(.journal-tabs button, .about-index a, .footer-nav a, .back-link):hover {
+  color: var(--rust);
+}
+.baburism :is(.journal-tabs button, .about-index a, .footer-nav a, .back-link):focus-visible {
+  outline: 2px solid var(--rust);
+  outline-offset: 4px;
+}
+.curated-viewport[data-ribbon-mode] {
+  overflow-x: auto;
+  touch-action: pan-x pan-y pinch-zoom;
+  scroll-behavior: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+}
+.curated-viewport[data-ribbon-mode="native"] .curated-track {
+  will-change: auto;
+  transform: none;
+}
+@media (max-width: 700px) {
+  .baburism .visit-page .visit-top {
+    display: block;
+  }
+  .baburism .visit-page .visit-top h1 {
+    font-size: clamp(40px, 10.8vw, 58px);
+  }
+  .baburism :is(.inner-hero, .about-opening-copy, .shop-heading) h1 {
+    font-size: clamp(40px, 10.8vw, 58px);
+    line-height: 1.1;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+  .baburism .inner-intro {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  .baburism :is(.about-opening-copy, .visit-copy) > p {
+    font-size: 19px;
+  }
+  .baburism .art-grid figcaption a {
+    font-size: 20px;
+    line-height: 1.35;
+  }
+  .baburism .work-metadata,
+  .baburism .work-year {
+    font-size: 15px;
+  }
+  .baburism .artwork-info {
+    gap: 24px;
+    padding-top: 26px;
+  }
+  .baburism .artwork-info h1 {
+    font-size: 36px;
+  }
+  .baburism .artwork-info p {
+    font-size: 18px;
+  }
+  .baburism .journal-tabs {
+    gap: 8px 20px;
+  }
+  .baburism .journal-tabs button {
+    font-size: 16px;
+  }
+  .baburism .article-page > h1 {
+    font-size: 40px;
+    line-height: 1.13;
+  }
+  .baburism .article-page > .lead {
+    font-size: 22px;
+  }
+  .baburism .article-body p {
+    font-size: 19px;
+    line-height: 1.75;
+  }
+  .baburism .privacy-page p {
+    font-size: 18px;
+    line-height: 1.75;
+  }
+  .baburism .privacy-page h2 {
+    font-size: 26px;
+  }
+  .baburism .shop-product-info {
+    padding-top: 0;
+  }
+  .baburism .shop-product-info h1 {
+    font-size: 34px;
+  }
+  .baburism .shop-product-description {
+    font-size: 19px;
+  }
+  .baburism .shop-product-price {
+    font-size: 27px;
+  }
+  .baburism .shop-product-picture {
+    padding: 22px 22px 64px;
+  }
+  .baburism .shop-specs {
+    font-size: 16px;
+  }
+  .baburism .shop-specs > div {
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+    gap: 18px;
+  }
+  .baburism .shop-saved-info h2 {
+    font-size: 22px;
+  }
+  .baburism .shop-saved-info > p {
+    font-size: 18px;
+  }
+  .baburism .shop-selection-summary {
+    padding: 24px 22px;
+  }
+  .baburism .shop-favorites-page > .shop-empty {
+    padding-top: 34px;
+  }
+  .baburism .shop-favorites-page > .shop-empty h2 {
+    font-size: 36px;
+  }
+  .baburism .shop-favorites-page > .shop-empty p {
+    font-size: 19px;
+  }
+  .baburism .missing-page p {
+    font-size: 19px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .baburism :is(.shop-heart, .shop-save-product) svg,
+  .baburism
+    :is(
+      .shop-thumbnails button,
+      .shop-row-select,
+      .shop-picture-action,
+      .shop-text-button,
+      .journal-tabs button,
+      .contact-form input,
+      .contact-form select,
+      .contact-form textarea
+    ) {
+    transition: none;
+  }
+}
+
+.not-found-page .text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 48px;
+}
+.not-found-page .text-link:focus-visible {
+  outline: 2px solid var(--rust);
+  outline-offset: 4px;
+}
+.not-found-code {
+  font-size: 16px;
+  color: var(--muted);
+  margin: 42px 0 20px;
+}

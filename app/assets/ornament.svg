@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" fill="none">
+<!-- Native vector reinterpretation of the supplied Baburism content strategy, p.7. -->
+<g stroke="#8c6b48" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+<path d="M120 12C126 46 160 37 164 66C167 90 187 111 228 120C187 129 167 150 164 174C160 203 126 194 120 228C114 194 80 203 76 174C73 150 53 129 12 120C53 111 73 90 76 66C80 37 114 46 120 12Z"/>
+<path d="M76 66C59 52 55 73 76 78C93 82 88 64 76 66ZM164 66C181 52 185 73 164 78C147 82 152 64 164 66ZM76 174C59 188 55 167 76 162C93 158 88 176 76 174ZM164 174C181 188 185 167 164 162C147 158 152 176 164 174Z"/>
+<path d="M68 65 84 79M172 65 156 79M68 175 84 161M172 175 156 161"/>
+</g></svg>

@@ -1,0 +1,13 @@
+{
+  "title": { "ru": "Как смотреть «Самарканд Дарбоза»", "uz": "", "en": "How to look at Samarkand Darboza" },
+  "description": { "ru": "Короткое описание для карточки и поиска.", "uz": "", "en": "" },
+  "body": { "ru": "Первый абзац.\n\nВторой абзац.", "uz": "", "en": "" },
+  "topic": "learning",
+  "image": "journal/darboza.jpg",
+  "images": [],
+  "quote": { "ru": "", "uz": "", "en": "" },
+  "quoteAuthor": { "ru": "", "uz": "", "en": "" },
+  "videoUrl": "",
+  "sourceUrl": "",
+  "publishedAt": "2027-03-01"
+}
